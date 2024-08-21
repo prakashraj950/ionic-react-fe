@@ -34,17 +34,19 @@ import './theme/variables.css';
 
 import Header from './components/SideMenu';
 import Routing from './routes/Routing';
+import Toastbar from './components/Common/Toastbar';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
+    <Toastbar />
     <IonReactRouter>
       <IonSplitPane contentId="main">
 
         <Header />
 
-        <IonRouterOutlet id="main">         
+        <IonRouterOutlet id="main">
           <Route path="/*" component={Routing} />
         </IonRouterOutlet>
 

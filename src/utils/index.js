@@ -4,3 +4,8 @@ export const scrollIntoViewError = (id) => {
         element.scrollIntoView()
     }
 }
+
+export const getLastKey = (obj) => {
+    const keys = Object.keys(obj);
+    return keys[keys.length - 1];
+};

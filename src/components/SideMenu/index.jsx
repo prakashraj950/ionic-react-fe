@@ -11,20 +11,10 @@ import {
 } from "@ionic/react";
 
 import { useLocation } from "react-router-dom";
-import {
-    archiveOutline,
-    archiveSharp,
-    bookmarkOutline,
-    heartOutline,
-    heartSharp,
-    mailOutline,
-    mailSharp,
-    paperPlaneOutline,
-    paperPlaneSharp,
-    trashOutline,
-    trashSharp,
-    warningOutline,
-    warningSharp
+import {  
+    create as createIcon,
+    layers,
+    layersOutline,
 } from "ionicons/icons";
 import "./menu.css"
 
@@ -34,14 +24,14 @@ const appPages = [
     {
         title: "Form",
         url: "/form",
-        iosIcon: mailOutline,
-        mdIcon: mailSharp
+        iosIcon: createIcon,
+        mdIcon: createIcon
     },
     {
         title: "List",
         url: "/list",
-        iosIcon: trashOutline,
-        mdIcon: trashSharp
+        iosIcon: layersOutline,
+        mdIcon: layers
     }
 ];
 

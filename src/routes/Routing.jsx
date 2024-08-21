@@ -10,9 +10,10 @@ export default function Routing(params) {
     return <IonPage>
         <IonRouterOutlet>
             {/* <Header> */}
-                <Route path="/form" component={Form} />
-                <Route path="/list" component={List} />
-                <Redirect exact from="/" to="/form" />
+            <Route path="/form" component={Form} />
+            <Route path="/edit/:id" component={Form} />
+            <Route path="/list" component={List} />
+            <Redirect exact from="/" to="/form" />
             {/* </Header> */}
         </IonRouterOutlet>
     </IonPage>
