@@ -48,7 +48,7 @@ export default function Form() {
     }
 
     useIonViewDidEnter(() => {
-  
+
     });
 
     useIonViewDidLeave(() => {
@@ -276,7 +276,7 @@ export default function Form() {
                     <IonButtons slot="start">
                         <IonMenuButton />
                     </IonButtons>
-                    <IonTitle>Form</IonTitle>
+                    <IonTitle>{editId ? "Edit" : null} Form</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
@@ -378,8 +378,8 @@ export default function Form() {
                             </IonItem>
 
                             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                                <IonButton onClick={handleSubmit} className='ion-align-self-center'>
-                                    Submit
+                                <IonButton onClick={handleSubmit} className='ion-align-self-center'>                                    
+                                    {editId ? "Update" : "Submit"}
                                 </IonButton>
                             </div>
                         </IonCol>
