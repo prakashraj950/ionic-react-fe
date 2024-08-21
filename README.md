@@ -73,7 +73,7 @@ http-server ./dist
 ```
 This will serve your app on a local server, accessible at ``http://localhost:8080`` by default.
 
-### 2. Deploy the Build
+### 3. Deploy the Build
 To deploy the build to a production environment, you can upload the contents of the ``dist`` directory to your preferred hosting provider.
 
 Common Hosting Services:
