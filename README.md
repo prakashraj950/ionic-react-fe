@@ -77,9 +77,9 @@ This will serve your app on a local server, accessible at ``http://localhost:808
 To deploy the build to a production environment, you can upload the contents of the ``dist`` directory to your preferred hosting provider.
 
 Common Hosting Services:
-- `Netlify`: Drag and drop the www folder in the Netlify dashboard.
-- `Vercel`: Link your Git repository and it will automatically build and deploy, but make sure to specify the www directory as the output folder.
+- `Netlify`: Drag and drop the ``dist`` folder in the Netlify dashboard.
+- `Vercel`: Link your Git repository and it will automatically build and deploy, but make sure to specify the ``dist`` directory as the output folder.
 - `Firebase Hosting`: Deploy using Firebase CLI.
-- `GitHub Pages`: Push the www content to a specific branch (like gh-pages).
+- `GitHub Pages`: Push the ``dist`` content to a specific branch (like gh-pages).
 
 By following these steps, you can serve or deploy the build created using the ionic build command.
