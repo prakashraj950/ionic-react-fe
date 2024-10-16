@@ -1,12 +1,28 @@
 image: node:latest
 
-pages:
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - deploy
+
+build_job:
+  stage: build
   script:
     - npm install
     - ionic build
+  artifacts:
+    paths:
+      - dist/
+
+pages:
+  stage: deploy
+  script:
     - mv dist public
   artifacts:
     paths:
       - public
   only:
-    - main  # Change this to your default branch if it's different
+    - main
