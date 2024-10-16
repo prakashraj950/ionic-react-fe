@@ -1,0 +1,12 @@
+image: node:latest
+
+pages:
+  script:
+    - npm install
+    - ionic build
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # Change this to your default branch if it's different
