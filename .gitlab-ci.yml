@@ -20,7 +20,7 @@ build_job:
 pages:
   stage: deploy
   script:
-    - mv dist public
+    - mv dist/* public
   artifacts:
     paths:
       - public
